@@ -1,6 +1,5 @@
 import { CoursesList } from "@/features/courses-list/pub/courses-list";
 import { CreateCourseForm } from "@/features/courses-list/pub/create-course-form";
-import { Button } from "@/shared/ui/button";
 
 export default async function Home() {
   return (
