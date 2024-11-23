@@ -33,9 +33,9 @@ jobs:
           user: ${{ secrets.STAGING_SSH_USERNAME }}
           private_key: ${{ secrets.STAGING_SSH_PRIVATE_KEY }}
           host_fingerprint: ${{ secrets.STAGING_SSH_FINGERPRINT }}
-          command: source ~/.nvm/nvm.sh; ~/deploy.sh 
-  end-to-end-tests:
-		needs: deploy
+          command: source ~/.nvm/nvm.sh; ~/deploy.sh
+  e2e:
+    needs: deploy
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
